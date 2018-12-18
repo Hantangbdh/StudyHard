@@ -8,12 +8,12 @@ public class Program3 {
                 System.out.println(i);
             }
         }
-        test();
+        //test();
     }
 
-    static void test() {
+   /* static void test() {
         String str = "eikuguhikuwer";
         char ch = str.charAt(2);
         System.out.printf("ch = %d\n", (byte)ch);
-    }
+    }*/
 }

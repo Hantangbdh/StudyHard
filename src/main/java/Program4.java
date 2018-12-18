@@ -1,22 +1,31 @@
-/*public class Program4 {
+import java.util.Scanner;
+
+//将一个正整数分解质因数
+public class Program4 {
     public static int fenjie_yinshu(int n){
-        for(int i=2;i<=n;i++){
-            if(n%i==0){
-                //找到最小的质数i
-                //最小质数就是这个数本身
-                if(n==i){
-                    System.out.println("这个数只有自身一个质数："+n);
-                }
-                //存在最小质数
-                else{
-                    System.out.println(i);
-
-                }
-
-
+        int k=2;
+        while(k<=n){
+            if(k==n){
+                System.out.println(n);
+                break;
+            }
+            else if(n%k==0){
+                System.out.print(k+"*");
+                n=n/k;
+            }
+            else{
+                k++;
             }
 
         }
+        return 0;
+    }
+
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        System.out.println("请输入要分解的质因数：");
+        int m=scan.nextInt();
+        fenjie_yinshu(m);
+        scan.close();
     }
 }
-*/

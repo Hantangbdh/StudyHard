@@ -17,7 +17,7 @@ public class Progame1 {
         if (scan.hasNext()) {
             String str1 = scan.next();
             System.out.println("输入的数据为：" + str1);
-            int n = Integer.valueOf(str1);
+            int n = Integer.valueOf(str1);    //'数字字符串'转换为数字
             System.out.printf("result = %d\n", tuzi(n));
         }
         scan.close();

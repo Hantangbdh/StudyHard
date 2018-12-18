@@ -1,8 +1,17 @@
 import java.util.Scanner;
 
 public class Program5 {
-    public static int score_sort(int n) {
-        return(n >= 90 ? 'a' : (n <60 ? 'c' :'b' ));//运行时返回的是数值
+    public static char score_sort(int n) {
+        if(n>=90){
+            System.out.println("a");
+        }
+        else if(n<90&&n>=60){
+            System.out.println("b");
+        }
+        else{
+            System.out.println("c");
+        }
+        return 0;
     }
 
     public static void main(String[] args) {

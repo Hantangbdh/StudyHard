@@ -1,13 +1,34 @@
-//判断一个五位数是不是回文数
-/*public class Program25 {
-    public static int Palindrome(int n){
-        //解决输入的数转换为字符串求其长度length
-        int middle =length/2;
-        for(int i=1;i<middle;i++){
+import java.util.Scanner;
 
+//判断一个五位数是不是回文数
+
+public class Program25 {
+    public static int Palindrome(int n){
+
+        return 0;
         }
-        for(int k=length,k>middle)
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String str = scan.nextLine();
+        //把字符串转换为一个char数组
+        char[] ch = str.toCharArray();
+        int len = ch.length;
+        for(int i=0;i<=len/2;i++){               //应该是同时进行
+            for(int j=len-1;j>=len/2;j--){
+                if(ch[i]==ch[j]){
+
+                }
+                else{
+
+                }
+
+            }
+        }
+
     }
 
+
+
 }
-*/
+
