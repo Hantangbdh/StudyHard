@@ -12,4 +12,3 @@ public class Program22 {
         System.out.println(jiecheng(5));
     }
 }
-//print nothing

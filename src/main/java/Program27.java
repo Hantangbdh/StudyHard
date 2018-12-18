@@ -5,6 +5,7 @@ public class Program27 {
             boolean b = false;
             for(int j=2;j<=i/2;j++){
                 if(i%j==0){
+                    b=false;
                     break;
                 }
                 else{
@@ -12,7 +13,7 @@ public class Program27 {
                 }
 
             }
-            if(b==true){
+            if(b){
                 System.out.println(i);
             }
         }

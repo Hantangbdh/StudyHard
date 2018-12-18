@@ -6,13 +6,14 @@ public class Program2 {
             boolean b = false;
             for (int j = 2; j <= i / 2; j++) {
                 if (i % j == 0) {
+                    b=false;
                     break;
                 }
                 else {
-                    b = true;    //
+                    b=true;
                 }
             }
-            if(b==true){
+            if(b){
                 System.out.println(i);
             }
         }
