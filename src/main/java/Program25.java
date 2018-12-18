@@ -1,30 +1,28 @@
 import java.util.Scanner;
 
-//判断一个五位数是不是回文数
+//判断一个数是不是回文数
 
 public class Program25 {
-    public static int Palindrome(int n){
-
-        return 0;
-        }
-
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter the number:");
         String str = scan.nextLine();
         //把字符串转换为一个char数组
         char[] ch = str.toCharArray();
         int len = ch.length;
-        for(int i=0;i<=len/2;i++){               //应该是同时进行
-            for(int j=len-1;j>=len/2;j--){
-                if(ch[i]==ch[j]){
-
-                }
-                else{
-
-                }
-
+        boolean b =true;
+        for(int i=0;i<len/2;i++) {
+            if (ch[i] != ch[len - i - 1]) {
+                b = false;
             }
         }
+            if(b){
+                System.out.println("It is a palindrome.");
+            }
+            else{
+                System.out.println("It is not a palindrome.");
+            }
+
 
     }
 
