@@ -10,8 +10,6 @@ public class Program26 {
 
         char first = scan.next().charAt(0);
 
-
-
         switch (first){
             case'M':                 //case(能否写入or  如m\\M)
                 System.out.println("Maybe you want 'Monday'");
