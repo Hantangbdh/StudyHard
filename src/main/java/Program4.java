@@ -29,3 +29,11 @@ public class Program4 {
         scan.close();
     }
 }
+/* check
+    for(int i=0;i<n/2;i++){
+        if(n%i==0){
+            return false;
+            }
+        }
+     return true;
+ */

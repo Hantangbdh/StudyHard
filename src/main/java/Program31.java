@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Program31 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("输入几个正整数呗,输入-1结束输入：");
+        System.out.println("输入几个正整数,输入-1结束输入：");
         int[] a = new int[20];
         int i=0;int j;
         do {

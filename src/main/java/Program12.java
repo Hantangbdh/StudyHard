@@ -2,31 +2,28 @@ import java.util.Scanner;
 
 //利润提成-奖金发放问题
 public class Program12 {
-
-    public static int L_J(Long  I){
-        double salary_up;
-        if(I<=100000){
-            salary_up=I*0.1;
-        }
-        else if(I<=200000){
-
-
-        }
-        return 0;
-    }
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        // 从键盘接收数据
-
-        // next方式接收字符串
-        System.out.println("输入利润：");
-        // 判断是否还有输入
-        if (scan.hasNext()) {
-            String str1 = scan.next();
-            System.out.println("输入的数据为：" + str1);
-            long n = Integer.valueOf(str1);
-            System.out.printf("result = %d\n", L_J(n));
+        System.out.println("请输入利润I：");
+        double I = scan.nextDouble();
+        double s;
+        if (I <= 100000) {
+            s = I * 0.1;
+            System.out.println(s);
         }
-        scan.close();
+        else if (I > 100000 && I <= 200000) {
+            s = 100000 * 0.1 + (I - 100000) * 0.75;
+            System.out.println(s);
+        }
+        else if (I > 200000 && I <= 400000) {
+            s = 100000 * 0.1 + 100000 * 0.075 + (I - 200000) * 0.05;
+            System.out.println(s);
+        }
+        else if (I > 400000 && I <= 600000) {
+            s = 100000 * 0.1 + 100000 * 0.075 + 200000 * 0.05 + (I - 400000) * 0.03;
+            System.out.println(s);
+        }
+
     }
 }
+
